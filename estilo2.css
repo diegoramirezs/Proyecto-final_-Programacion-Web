@@ -1,0 +1,131 @@
+*{
+	padding: 0;
+	margin: 0;
+
+}
+
+header{
+	font-family: 'Yuji Boku', serif;
+	font-size: 300%;
+	text-align: center;
+	line-height: 200px;
+	color: white;
+	background-image: url("imagen/piso.jpg");
+	background-color: rgba(0,0,0,0.15);
+	background-position: center;
+	height: 300px;
+	width: 150%px;
+	margin: 0%;
+}
+
+
+p{
+	border: black 1px solid;
+}
+
+body{
+	background-image: url(imagen/back4.jpg);
+}
+nav{
+	background: black;
+	color: white;
+	height: 60px;
+
+	}
+
+
+nav ul li{
+	font-family: sans-serif;
+	float: left;
+	list-style: none;
+	margin: 20px;
+	
+}
+
+nav li a{
+	color: white;
+	font-family: 'Arvo', serif;
+	text-decoration: none;
+	padding: 20px;
+}
+
+nav li a:hover{
+	background: darkslategrey;
+
+}
+
+
+}
+
+nav li{
+	display: inline-block;
+	text-align: center;
+}
+
+
+
+.container{
+	background-image: url(imagen/back4.jpg);
+	width: 90%;
+	max-width: 7000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 100px;
+}
+
+
+
+
+.item{
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 20);
+	text-decoration: none;
+	transition: all 300ms;
+}
+
+.item::after{
+	content: "";
+	background-color: rgba(179, 229, 252, .1);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: scale(0);
+	transition: all 300ms;
+	opacity: 0;
+}
+
+.item:hover:after{
+	opacity: 1;
+	transform: scale(1);
+}
+
+.item:hover{
+	transform: scale(1.05);
+}
+
+
+.item-text{
+	padding: 1em;
+	font-family: 'Arvo', serif;
+}
+
+.item-img{
+	max-width: 100%;
+	max-height: 50%s;
+	display: block;
+}
+
+.item p{
+	padding: 5px;
+}
